@@ -5,7 +5,6 @@
   "author": "vntk",
   "license": "MIT",
   "main": "index.js",
-  "private": true,
   "gypfile": true,
   "homepage": "https://github.com/vntk/dongdu",
   "repository": {
