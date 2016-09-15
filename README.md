@@ -14,6 +14,8 @@ A Vietnamese word segmentation tool
 
 Todo: Need to update
 
+Please check homepage: https://github.com/vntk/dongdu
+
 LICENSE
 ========
 
