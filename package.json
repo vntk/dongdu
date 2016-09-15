@@ -1,6 +1,6 @@
 {
   "name": "dongdu",
-  "version": "0.9.1",
+  "version": "0.9.2",
   "description": "Node.js Addon for DongDu",
   "author": "vntk",
   "license": "MIT",
@@ -24,7 +24,6 @@
     "configure": "node-gyp configure",
     "build": "node-gyp build",
     "preinstall": "npm install node-pre-gyp",
-    "postinstall": "node-pre-gyp package && node-pre-gyp-github publish --release",
     "install": "node-pre-gyp install --fallback-to-build",
     "test": "tape test/start.js | tap-spec"
   },
