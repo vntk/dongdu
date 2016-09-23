@@ -118,6 +118,7 @@ nbproject
 .idea
 .node_history
 .vscode
+test
 obj
 build
 lib/binding
