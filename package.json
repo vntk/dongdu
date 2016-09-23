@@ -23,7 +23,7 @@
   "scripts": {
     "configure": "node-gyp configure",
     "build": "node-gyp build",
-    "preinstall": "npm install node-pre-gyp node-gyp -g",
+    "preinstall": "npm install node-pre-gyp node-gyp",
     "install": "node-pre-gyp install --fallback-to-build",
     "test": "tape test/start.js | tap-spec"
   },
