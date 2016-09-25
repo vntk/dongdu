@@ -1,9 +1,12 @@
-# Test against this version of Node.js
+os: unstable
 environment:
-  nodejs_version: "4.4"
   NODE_PRE_GYP_GITHUB_TOKEN:
     secure: exBExlpCER5lcqY3HuFEgq5o9Ry3Yc+vi1AXijOukkgIgLLNJKWylLpltvyUJe0r
 
+  matrix:
+  - nodejs_version: "4"
+  - nodejs_version: "6"
+  
 platform:
   - x64
   - x86
