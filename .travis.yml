@@ -24,8 +24,6 @@ before_install:
 
 before_script:
 - COMMIT_MESSAGE=$(git show -s --format=%B $TRAVIS_COMMIT | tr -d '\n')
-- NODE_PRE_GYP_GITHUB_TOKEN=
-- export PATH=./node_modules/.bin/:$PATH
 
 script:
 - if [[ ${COMMIT_MESSAGE} =~ "[travis publish binary]" ]]; then node-pre-gyp package && node-pre-gyp-github
