@@ -43,11 +43,15 @@ Machine::~Machine()
 void Machine::convert(string sentence)
 {
 	// delete control characters, such as Return, tabs, ... and SPACE
-	// in begin and end of string. Control characters's oct is smaller than 41.
-	while (sentence[0] <= 40 && sentence.length() > 0) sentence.erase(0);
+	// in begin and end of string. Control characters's decimal is smaller than 32.
+	while (sentence[0] <= 32 && sentence[0] >= 0 && sentence.length() > 0) {
+		sentence.erase(0, 1);	
+	} 
 
 	size_t length = sentence.length();
-	while (sentence[length - 1] <= 40 && length > 0) sentence.erase(--length);
+	while (sentence[length - 1] <= 32 && sentence[length - 1] >= 0 && length > 0) {
+		sentence.erase(--length);	
+	} 
 
 	for(int i = 0; i < WINDOW_LENGTH; ++i)
 		sentence = "BOS " + sentence + " BOS";
@@ -279,7 +283,7 @@ string Machine::segment(string sentence)
 	}
 	ans += vfeats->at(feats->size() + WINDOW_LENGTH).syllabel;
 
-	while (ans[0] <= 40 && ans.length() > 0) ans.erase(0);
+	while (ans[0] <= 32 && ans[0] >= 0 && ans.length() > 0) ans.erase(0, 1);
 	string dummy = "";
 	dummy += ans[0];
 	for(size_t i = 1; i < ans.length(); ++i) {
