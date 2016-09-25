@@ -3,6 +3,7 @@
 A Vietnamese word segmentation tool
 
 [![npm version](https://img.shields.io/npm/v/dongdu.svg?style=flat)](https://www.npmjs.com/package/dongdu)
+![Travis](https://travis-ci.org/vntk/dongdu.svg?branch=master)
 
 
 # Installation In A Nutshell
