@@ -85,8 +85,8 @@ string Feats::regex(string text, FeatsReference ref)
 	if (ref == PREDICT) {
 		for(size_t i = 0; i < text.length(); ++i) {
 			if (SYMBOLS.find(text[i]) != string::npos) {
-  		   text.insert(i+1, " ");
-	   	   text.insert(i, " ");
+				text.insert(i+1, " ");
+				text.insert(i, " ");
 	  			i += 2;
 			}
 		}
