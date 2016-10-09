@@ -18,6 +18,8 @@ Todo: Need to update
 
 Please check homepage: https://github.com/vntk/dongdu
 
+Build from source: `npm install --build-from-source`
+
 LICENSE
 ========
 
