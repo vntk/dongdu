@@ -18,6 +18,13 @@ Todo: Need to update
 
 Please check homepage: https://github.com/vntk/dongdu
 
+Build from source: `npm install --build-from-source`
+
+Publish a new version: 
+
+* `git commit --allow-empty -m "[publish binary]"`
+* `git commit --allow-empty -m "[travis publish binary]"`
+
 LICENSE
 ========
 
