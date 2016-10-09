@@ -264,12 +264,22 @@ bool Machine::load()
 
 string Machine::segment(string sentence)
 {
+	// is empty
+	if (sentence.empty()) return "";
+	// is one word
+	// else if (sentence.length() < 10 && sentence.find(" ") == std::string::npos) {
+	// 	return sentence;
+	// }
 	// initialize feats
 	feats->clear();
 
 	// extract sentence to feats
 	extract(sentence, PREDICT);
-	if (feats->size() == 0)	return "";
+	if (feats->size() == 0) {
+		//cout << "Return empty string ??? " << sentence << endl;
+		//cout << "No! Should return sentence itself " << sentence << endl;
+		return sentence;	
+	}
 
 	// convert feats to Liblinear's problem struct
 	getProblem();
